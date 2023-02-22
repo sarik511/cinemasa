@@ -1,0 +1,191 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header__banner_item {
+        align-items: center;
+    }
+
+    .films__cards {
+        grid-template-columns: repeat(2, 255px);
+        justify-content: center;
+    }
+
+    .title {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .header__banner {
+        height: 600px;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    .header__menu:focus~.header__list {
+        top: 0;
+    }
+
+    .header__nav {
+        padding: 20px 0;
+    }
+
+    .header__list {
+        position: absolute;
+        top: -100%;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        background: #040D1F;
+        z-index: 5;
+        transition: 0.7s;
+    }
+
+    .header__link {
+        padding: 30px 6px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .collection__cards {
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+
+    .header__banner_title {
+        font-size: 49px;
+        line-height: 50px;
+    }
+
+    .header__banner_text {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .wanda {
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+
+    .flash,
+    .great,
+    .gotham,
+    .witcher {
+        grid-column: span 2;
+    }
+
+    .footer__item {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .header__banner_title {
+        font-size: 30px;
+    }
+
+    .header__banner_text {
+        text-align: center;
+    }
+
+    .btn {
+        padding: 15px 20px;
+    }
+
+    .header__logo img {
+        width: 35%;
+    }
+
+    .header__logo span {
+        font-size: 14px;
+    }
+
+    .header__menu {
+        width: 35px;
+    }
+
+    .header__menu span {
+        height: 5px;
+    }
+
+    .films__cards {
+        grid-template-columns: repeat(1, 255px);
+        justify-content: center;
+    }
+
+    .widow__inner img {
+        width: 100%;
+    }
+
+    .widow__inner {
+        align-items: center;
+    }
+
+    .widow__inner_text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .widow::after {
+        background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 20.64%, rgba(255, 255, 255, 0) 100.72%);
+    }
+
+    .flash,
+    .great,
+    .gotham,
+    .witcher {
+        grid-column: span 4;
+    }
+
+    .thrones {
+        padding: 40px 22px;
+    }
+
+    .series__card_title {
+        font-size: 32px;
+    }
+
+    .series__card_text {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .collection__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .thrones {
+        padding: 40px 5px;
+    }
+
+    .wanda {
+        grid-row: span 1;
+    }
+
+    .footer__text {
+        font-size: 15px;
+    }
+
+    .series__card_title {
+        font-size: 27px;
+    }
+
+    .series__card_text {
+        font-size: 12px;
+    }
+}
